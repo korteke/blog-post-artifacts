@@ -363,7 +363,7 @@ paths:
       parameters: []
       requestBody:
         content: {}
-  "/v1.0/me/mailFolders/{mailbox}/messages":
+  "/v1.0/me/mailFolders/{mailbox}/messages?$filter=isRead+ne+true&$top=1":
     get:
       responses:
         default:
